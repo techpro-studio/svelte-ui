@@ -6,7 +6,7 @@
 <script>
     export let element;
     export let fontWeightMedium = false;
-    export let size;
+    export let size = '';
     export let align;
     export let color;
 
