@@ -6,7 +6,7 @@
     export let social_networks;
     export let copyright;
     export let description;
-    
+    export let logoSrc;
 
 </script>
 
@@ -106,7 +106,7 @@
                 <div class="column">
                     <div class="column-header">
                         <a href="..">
-                            <Image src='/images/logo/logo-light.png' />
+                            <Image src={logoSrc} />
                         </a>
                     </div>
                     <div class="column-content">{description}</div>
