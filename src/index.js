@@ -11,6 +11,7 @@ import Spinner from './Spinner.svelte';
 import Textarea from './Textarea.svelte';
 import Text from "./Text.svelte";
 import File from "./File.svelte"
+import Footer from "./Footer.svelte";
 
 export { Button, Checkbox, CheckboxGroup,
-   Image, Promo, Spinner, Title, Textarea, Textfield, Label, Slider, Text, File };
+   Image, Promo, Spinner, Title, Textarea, Textfield, Label, Slider, Text, File, Footer };
