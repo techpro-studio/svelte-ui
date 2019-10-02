@@ -3,7 +3,7 @@
 
     export let phone;
     export let email;
-    export let social_networks;
+    export let socialNetworks;
     export let copyright;
     export let description;
     export let logoSrc;
@@ -117,7 +117,7 @@
                     </div>
                     <div class="column-content">
                         <div class="list">
-                            {#each social_networks as social}
+                            {#each socialNetworks as social}
                                 <a href={social.href} class="link-icon" target="_blank">
                                     <img src={social.icon} alt="Icon" />
                                 </a>
