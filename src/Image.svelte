@@ -1,6 +1,8 @@
 <script>
     export let src;
     export let retina = true;
+    export let pictureStyle;
+    export let imgStyle;
 
     function genNameX(value, n) {
         const divided = value.split(".");
@@ -14,6 +16,7 @@
     }
 
     $: set = genRetinaSetSrc(src);
+
 </script>
 
 <style>
@@ -24,9 +27,9 @@
 </style>
 
 {#if retina}
-    <picture>
+    <picture style={pictureStyle} >
       <source srcset={set}>
-        <img src={src} class="image" alt="image" />
+        <img src={src} style={imgStyle} class="image" alt="image" />
     </picture>
 {:else}
     <img src={src} class='image' alt="image" />
