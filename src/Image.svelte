@@ -1,8 +1,8 @@
 <script>
     export let src;
     export let retina = true;
-    export let pictureStyle;
-    export let imgStyle;
+    export let pictureStyle = undefined;
+    export let imgStyle = undefined;
 
     function genNameX(value, n) {
         const divided = value.split(".");
@@ -12,7 +12,7 @@
     }
 
     function genRetinaSetSrc(src) {
-        return `${genNameX(src, 1)} 1x, ${genNameX(src, 2)} 2x`
+        return `${src} 1x, ${genNameX(src, 2)} 2x`
     }
 
     $: set = genRetinaSetSrc(src);
