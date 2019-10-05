@@ -7,7 +7,8 @@
     export let copyright;
     export let description;
     export let logoSrc;
-    export let backgroundColor;
+    export let logoHref;
+    export let logoHrefTarget = "_self";
 
 </script>
 
@@ -22,6 +23,10 @@
 
     .bottom {
         border-top: 1px solid #535353;
+    }
+
+    .footer {
+        background-color: var(--main-color);
     }
 
     .wrapper {
@@ -96,13 +101,13 @@
     }
 </style>
 
-<footer style="background-color: {backgroundColor}">
+<footer class="footer">
     <div class="top">
         <div class="container">
             <div class="wrapper">
                 <div class="column">
                     <div class="column-header">
-                        <a href="..">
+                        <a href={logoHref} target={logoHrefTarget}}>
                             <Image src={logoSrc} />
                         </a>
                     </div>

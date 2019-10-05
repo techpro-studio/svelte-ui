@@ -10,7 +10,6 @@
     export let buttonTitle;
     export let buttonHref;
     export let backgroundImageSrc;
-    export let backgroundColor;
 
 </script>
 
@@ -18,6 +17,7 @@
     .promo {
         position: relative;
         overflow: hidden;
+        background-color: var(--main-color);
     }
 
     .background {
@@ -91,7 +91,7 @@
     }
 </style>
 
-<section class="promo" style="background-color: {backgroundColor}">
+<section class="promo">
     <div class="background left">
         <Image src={backgroundImageSrc} />
     </div>
