@@ -7,14 +7,11 @@
     export let copyright;
     export let description;
     export let logoSrc;
+    export let backgroundColor;
 
 </script>
 
 <style>
-    .footer {
-        background-color: #1e212a;
-    }
-
     .top {
         padding-top: 100px;
         padding-bottom: 60px;
@@ -99,7 +96,7 @@
     }
 </style>
 
-<footer class="footer">
+<footer style="background-color: {backgroundColor}">
     <div class="top">
         <div class="container">
             <div class="wrapper">
