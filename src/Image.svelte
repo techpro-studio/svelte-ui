@@ -12,6 +12,9 @@
     }
 
     function genRetinaSetSrc(src) {
+        if (!src){
+            return
+        }
         return `${src} 1x, ${genNameX(src, 2)} 2x`
     }
 
@@ -26,11 +29,13 @@
   }
 </style>
 
-{#if retina}
-    <picture style={pictureStyle} >
-      <source srcset={set}>
-        <img src={src} style={imgStyle} class="image" alt="image" />
-    </picture>
-{:else}
-    <img src={src} class='image' alt="image" />
+{#if src}
+    {#if retina}
+        <picture style={pictureStyle} >
+          <source srcset={set}>
+            <img src={src} style={imgStyle} class="image" alt="image" />
+        </picture>
+    {:else}
+        <img src={src} class='image' alt="image" />
+    {/if}
 {/if}
