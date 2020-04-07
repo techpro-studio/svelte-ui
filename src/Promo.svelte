@@ -103,7 +103,7 @@
             <Title size="large" element="h3">{title}</Title>
             <Text content={text} />
             <div class="action">
-                <Button link={buttonHref} theme="solid">{buttonTitle}</Button>
+                <Button link={buttonHref} target="_self" theme="solid">{buttonTitle}</Button>
             </div>
         </div>
     </div>
