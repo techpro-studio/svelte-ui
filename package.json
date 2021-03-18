@@ -1,6 +1,6 @@
 {
   "name": "techpro-svelte-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shared svelte components used in techpro landing page",
   "author": "alex@techpro.studio",
   "license": "MIT",

@@ -2,6 +2,7 @@
   export let link;
   export let target = "_self";
   export let theme = '';
+  export let rel = "external"
 
   $: cssClass = `button-link ${theme}`;
 </script>
@@ -57,4 +58,4 @@
   }
 </style>
 
-<a on:click type="submit" {target} href={link} class={cssClass}><slot></slot></a>
+<a on:click type="submit" {rel} {target} href={link} class={cssClass}><slot></slot></a>
