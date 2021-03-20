@@ -55,7 +55,7 @@
     }
 
     .fw-medium {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .left {
